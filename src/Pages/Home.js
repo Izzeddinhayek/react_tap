@@ -3,7 +3,7 @@ import Header from "../Layout/Header";
 import HeroSection from "../Components/HeroSection";
 import MainContainer from "../Components/MainContainer";
 
-function App() {
+function Home() {
   return (
     <div className="w-screen h-screen bg-bgBodyLight dark:bg-bgBodyDark">
       <Header />
@@ -13,4 +13,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
