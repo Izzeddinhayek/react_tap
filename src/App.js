@@ -8,7 +8,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/reactproject" element={<Home />} />
+          <Route path="/react_tap" element={<Home />} />
           <Route path="/details/:id" element={<Details />} />
         </Routes>
       </BrowserRouter>
