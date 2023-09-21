@@ -2,7 +2,7 @@
   "name": "reactproject",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Izzeddinhayek.github.io/react_tap",
+  "homepage": "https://izzeddinhayek.github.io/react_tap",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
