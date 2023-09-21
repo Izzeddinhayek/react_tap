@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const Card = () => {
   return (
-    <Link to="details/:id">
+    <Link to="react_tap/details/1">
       <div className="bg-bgDefaultLight dark:bg-bgDefaultDark flex flex-col rounded-lg shadow-md max-w-full">
         <img
           src={HTML}
