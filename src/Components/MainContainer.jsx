@@ -1,18 +1,10 @@
 import React from "react";
-import InputForm from "./InputForm";
-import SearchOutput from "./SharedComponents/SearchOutput";
-import CardContainer from "./CardContainer";
-import Footer from "../Layout/Footer";
-const MainContainer = () => {
+
+const MainContainer = ({ children }) => {
   return (
-    <main className="flex flex-col pb-[30px]">
+    <main className="flex flex-col pb-[30px] bg-bgBodyLight dark:bg-bgBodyDark">
       <section>
-        <div className="pt-5 pb-[30px] px-[60px]">
-          <InputForm />
-          <SearchOutput />
-          <CardContainer />
-          <Footer />
-        </div>
+        <div className="pt-5 pb-[30px] px-[60px]">{children}</div>
       </section>
     </main>
   );

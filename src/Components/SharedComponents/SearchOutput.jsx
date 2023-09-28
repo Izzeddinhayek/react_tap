@@ -1,9 +1,9 @@
 import React from "react";
 
-const SearchOutput = ({ children }) => {
+const SearchOutput = ({ value }) => {
   return (
     <div>
-      <h2 className="text-2xl font-bold text-bodyTextLight dark:text-bodyTextDark py-4">{`${children} Web Topics Found`}</h2>
+      <h2 className="text-2xl font-bold text-bodyTextLight dark:text-bodyTextDark py-4">{`${value} Web Topics Found`}</h2>
     </div>
   );
 };
