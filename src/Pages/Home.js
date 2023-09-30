@@ -47,38 +47,38 @@ function Home({ onClickFav, onClickDark, menuVisible }) {
     fetchData();
   }, [debouncedSearch]);
 
-  useEffect(() => {
-    if (topics) {
-      let categoriesList = new Set();
-      topics.forEach((topic) => categoriesList.add(topic.category));
-      setFilterOptions([...categoriesList]);
+  // useEffect(() => {
+  //   if (topics) {
+  //     let categoriesList = new Set();
+  //     topics.forEach((topic) => categoriesList.add(topic.category));
+  //     setFilterOptions([...categoriesList]);
 
-      let updatedTopics = [...topics];
-      if (sort) {
-        updatedTopics.sort((a, b) => {
-          switch (sort) {
-            case "DEFAULT":
-              return updatedTopics;
-            case "AUTHOR":
-              return a["name"] < b["name"] ? -1 : 1;
+  //     let updatedTopics = [...topics];
+  //     if (sort) {
+  //       updatedTopics.sort((a, b) => {
+  //         switch (sort) {
+  //           case "DEFAULT":
+  //             return updatedTopics;
+  //           case "AUTHOR":
+  //             return a["name"] < b["name"] ? -1 : 1;
 
-            case "TOPIC":
-              return a["topic"] < b["topic"] ? -1 : 1;
+  //           case "TOPIC":
+  //             return a["topic"] < b["topic"] ? -1 : 1;
 
-            default:
-              throw `Unknown sort by option ${sort}`;
-          }
-        });
-      }
+  //           default:
+  //             throw `Unknown sort by option ${sort}`;
+  //         }
+  //       });
+  //     }
 
-      if (filter) {
-        updatedTopics = updatedTopics.filter(
-          (topic) => topic.category === filter
-        );
-      }
-      setViewTopics(updatedTopics);
-    }
-  }, [topics, sort, filter]);
+  //     if (filter) {
+  //       updatedTopics = updatedTopics.filter(
+  //         (topic) => topic.category === filter
+  //       );
+  //     }
+  //     setViewTopics(updatedTopics);
+  //   }
+  // }, [topics, sort, filter]);
 
   const handleSearchChange = (e) => {
     setSearch(e.target.value);
